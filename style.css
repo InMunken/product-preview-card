@@ -17,7 +17,7 @@ html, body {
     justify-content: center;
 }
 
-.container{
+.container{  /*main section to reName*/
     border: 2px solid red;
     
     height: 500px;
@@ -27,15 +27,17 @@ html, body {
 }
 
 .div-contain {
+
+    height: 100%;
+    width: 100%;
+
     border: 2px solid green;
-
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
+    display: flex;
 }
-
+    
 
 .contain-img{
-    height: 55%;
+    width: 50%;
 
     border: 2px solid blue;
     border-radius: 10px 0px 0px 10px; /*Así hacés que el border raius sólo se aplique a las esquinas que vos quieras, empieza desde la superior izquierda y va en el sentido de las agujas del reloj*/
@@ -45,7 +47,7 @@ html, body {
 
 
 .img {
-    max-height: 100%;
+    max-width: 100%;
   height: auto; /* Esto mantiene la proporción de la imagen */
 
     object-fit: scale-down;
@@ -53,7 +55,7 @@ html, body {
 }
 
 .contain-info {
-    margin: 20px;
+    width: 50%;
     display: grid;
 }
 
