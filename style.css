@@ -9,29 +9,47 @@
 }
 
 html, body {
-    height:100%; 
-    margin:0;
+    margin:0; /*hmmmm*/
     padding:0;
     background-color: var(--cream);
+
+    display: flex;
+    justify-content: center;
 }
 
-.container {
-    margin: 50px auto;  
+.container{
+    border: 2px solid red;
+    
+    height: 500px;
     width: 600px;
     border-radius: 15px;
     background-color: var(--white);
 }
 
 .div-contain {
+    border: 2px solid green;
+
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    height: 100%;
 }
 
-.img {
-    width: 100%;
-    height: 100%;
+
+.contain-img{
+    height: 55%;
+
+    border: 2px solid blue;
     border-radius: 10px 0px 0px 10px; /*Así hacés que el border raius sólo se aplique a las esquinas que vos quieras, empieza desde la superior izquierda y va en el sentido de las agujas del reloj*/
+    overflow: hidden;
+
+}
+
+
+.img {
+    max-height: 100%;
+  height: auto; /* Esto mantiene la proporción de la imagen */
+
+    object-fit: scale-down;
+    
 }
 
 .contain-info {
@@ -39,11 +57,11 @@ html, body {
     display: grid;
 }
 
-/* Casi 5 horas de prueba y error, codeando de manera mediocre
-    y teninedo que investigar sobre el uso adecuado de flex y grid.
-    Estuve muy cerca de poder terminarlo pero estaba hecho de una 
-    manera horrible a la vista del desarrollo eficiente.
-    Básicamente borrá todo y empecé de vuelta xd
-    Si hubiera sacado screen la adjuntaba asi veían el mamarracho*/
+.attribution{
+    position: fixed;
+    bottom: 0px;
+}
+
+/* Casi 5 horas de prueba y error, codeando de manera mediocre y teninedo que investigar sobre el uso adecuado de flex y grid. Estuve muy cerca de poder terminarlo pero estaba hecho de una manera horrible a la vista del desarrollo eficiente. Básicamente borrá todo y empecé de vuelta xd. Si hubiera sacado screen la adjuntaba asi veían el mamarracho*/
 
 /* Jajaja para eso están los commits, tenés que hacerlos más seguido sino piernden el senmtido, con el comando "alt+z" en Visual Studio activás el ajsute de línea así si querés hacer un comentario no hace falta que los enters los pongas vos*/
