@@ -16,7 +16,7 @@ html, body {
 }
 
 .container {
-    margin: 50px auto;
+    margin: 50px auto;  
     width: 600px;
     border-radius: 15px;
     background-color: var(--white);
@@ -31,6 +31,7 @@ html, body {
 .img {
     width: 100%;
     height: 100%;
+    border-radius: 10px 0px 0px 10px; /*Así hacés que el border raius sólo se aplique a las esquinas que vos quieras, empieza desde la superior izquierda y va en el sentido de las agujas del reloj*/
 }
 
 .contain-info {
@@ -42,7 +43,7 @@ html, body {
     y teninedo que investigar sobre el uso adecuado de flex y grid.
     Estuve muy cerca de poder terminarlo pero estaba hecho de una 
     manera horrible a la vista del desarrollo eficiente.
-    Basicamente borre todo y empecé de vuelta xd
+    Básicamente borrá todo y empecé de vuelta xd
     Si hubiera sacado screen la adjuntaba asi veían el mamarracho*/
 
-
+/* Jajaja para eso están los commits, tenés que hacerlos más seguido sino piernden el senmtido, con el comando "alt+z" en Visual Studio activás el ajsute de línea así si querés hacer un comentario no hace falta que los enters los pongas vos*/
